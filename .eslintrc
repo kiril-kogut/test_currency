@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:promise/recommended"
+  ],
+  "plugins": ["react", "jsx-a11y", "optimize-regex", "sonarjs", "no-loops", "no-use-extend-native", "promise"],
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "packageDir": "./",
+        "devDependencies": false
+      }
+    ],
+    "optimize-regex/optimize-regex": "warn",
+    "sonarjs/cognitive-complexity": ["error", 30],
+    "no-loops/no-loops": 2,
+    "no-use-extend-native/no-use-extend-native": 2,
+    "comma-dangle": ["error",  "always-multiline"],
+    "semi": ["error", "always"],
+    "no-ternary": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "promise/catch-or-return": "off",
+    "promise/always-return": "off",
+    "arrow-parens": "off",
+    "no-use-before-define": "off",
+    "react/jsx-closing-bracket-location": ["error", "after-props"],
+    "react/require-default-props": "off",
+    "object-curly-newline": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off"
+  },
+  "globals": {
+    "document": "readonly",
+    "window": "readonly",
+    "navigator": "readonly"
+  }
+}
