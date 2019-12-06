@@ -13,6 +13,7 @@ export default StyleSheet.create({
   input: {
     flexDirection: 'row',
     alignItems: 'center',
+    alignSelf: 'stretch',
     flex: 1,
     paddingHorizontal: 5,
   },
@@ -25,11 +26,6 @@ export default StyleSheet.create({
   },
   placeholder: {
     color: 'grey',
-  },
-  square: {
-    width: 10,
-    height: 10,
-    backgroundColor: 'gray',
   },
   option: {
     paddingHorizontal: 5,
@@ -81,5 +77,8 @@ export default StyleSheet.create({
     overflow: 'hidden',
     alignItems: 'center',
     backgroundColor: 'transparent',
+  },
+  spacer: {
+    flex: 1,
   },
 });

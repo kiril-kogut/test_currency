@@ -64,12 +64,11 @@ const Dropdown = ({ styles, value, options, placeholder, itemsToDisplay, onChang
 
   return (
     <View ref={containerRef} style={[localStyles.container, styles.container]}>
-      <TouchableNativeSpecific onPress={handleOpen}>
+      <TouchableNativeSpecific onPress={handleOpen} style={localStyles.spacer}>
         <View style={localStyles.input}>
           <View style={localStyles.textContainer}>
             {value ? renderValue() : renderPlaceholder()}
           </View>
-          {/* <View style={localStyles.square} /> */}
           {renderAccessory()}
         </View>
       </TouchableNativeSpecific>

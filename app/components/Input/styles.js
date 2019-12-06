@@ -7,6 +7,7 @@ export default StyleSheet.create({
     borderBottomColor: 'gray',
     height: 35,
     flexDirection: 'row',
+    alignItems: 'center',
   },
   input: {
     paddingVertical: 0,
